@@ -13,6 +13,7 @@ phases:
     commands:
       - echo Deployment started on `date`
       - echo Deploying with the Serverless Framework
+      - cd NotesApp/notes-api
       - sls deploy -v -s $ENV_NAME
   post_build:
     commands:
